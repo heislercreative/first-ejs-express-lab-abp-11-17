@@ -7,7 +7,6 @@ app.get("/", function(req, resp){
   const favoriteThings = ["Code", "Music", "People"]
 
   resp.render("index", welcomeText)
-  })
 })
 
 module.exports = app
