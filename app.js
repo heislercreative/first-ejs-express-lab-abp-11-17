@@ -3,8 +3,7 @@ var app = express()
 
 // Build Your Route Here
 app.get("/", function(req, resp){
-  const viewData = {}
-  resp.render("index", viewData)
+  resp.render("index")
 })
 
 module.exports = app
