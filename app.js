@@ -3,14 +3,10 @@ var app = express()
 
 // Build Your Route Here
 app.get("/", function(req, resp){
-  const welcomeText = "Welcome to HTML"
-  const favoriteThings = ["Code", "Music", "People"]
+  const welcomeText = "Hello, World!"
 
   resp.render("index", {
-    "welcomeText": welcomeText,
-    name: "Avi",
-    colors: ["Red", "Yellow", "Blue"],
-    favoriteThings: favoriteThings
+    "welcomeText": welcomeText
   })
 })
 
