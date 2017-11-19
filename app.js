@@ -4,7 +4,7 @@ var app = express()
 // Build Your Route Here
 app.get("/", function(req, resp){
   const viewData = {}
-  resp.render("viewfile name", viewData)
+  resp.render("index", viewData)
 })
 
 module.exports = app
